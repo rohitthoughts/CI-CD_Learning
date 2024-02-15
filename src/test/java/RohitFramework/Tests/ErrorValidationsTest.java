@@ -22,7 +22,7 @@ public class ErrorValidationsTest extends BaseTest{
 		String CountryName = "India";
 
 		 Lpage.UserLogin("punekar435@gmail.com", "Pune");
-		 Assert.assertEquals("Incorrec email or password.",Lpage.VerifyErrorMessage());
+		 Assert.assertEquals("Incorrect email or password.",Lpage.VerifyErrorMessage());
 		}
 
 		@Test(retryAnalyzer=Retry.class)
