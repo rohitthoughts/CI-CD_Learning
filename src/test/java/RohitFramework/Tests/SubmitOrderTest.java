@@ -39,6 +39,7 @@ public class SubmitOrderTest extends BaseTest{
 
 		checkoutPage.SelectCountry(input.get("countryName"));
 		checkoutPage.verifySubmit();
+		Thread.sleep(3000);
 		ConfirmationPage confirmationPage = checkoutPage.submitOrder();
 
 		String confirmMessage = confirmationPage.getConfirmationMessage();

@@ -24,14 +24,14 @@ public class CheckoutPage extends AbstractComponents {
 	@FindBy(css="[placeholder='Select Country']")
 	WebElement country;
 	
-	@FindBy(css="[class*='action__submit']")
+	@FindBy(css="[class*='btnn action__submit']")
 	WebElement submit;
 	
 	@FindBy(xpath="(//*[contains(@class,'ta-item')])[2]")
 	WebElement SelectCountry;
 	
 	By select = By.cssSelector("[class*='ta-results']");
-	By verifySubmitBtn = By.cssSelector("[class*='action__submit']");
+	By verifySubmitBtn = By.cssSelector("[class*='btnn action__submit']");
 	
 	
 	public void SelectCountry(String countryName)

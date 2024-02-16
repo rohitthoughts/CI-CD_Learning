@@ -5,7 +5,9 @@
     <classes>
       <class name="RohitFramework.Tests.SubmitOrderTest">
         <methods>
-          <include name="submitOrder"/>
+          <include name="tearDown"/>
+          <include name="LaunchApplication"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- RohitFramework.Tests.SubmitOrderTest -->
     </classes>
